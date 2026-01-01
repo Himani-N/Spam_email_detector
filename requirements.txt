@@ -1,0 +1,62 @@
+Requirements for Your Project
+
+Your project uses:
+
+Flask – for the web app
+
+pandas – for loading/manipulating the dataset
+
+scikit-learn – for Naive Bayes and vectorizing text
+
+nltk – for stopwords and text preprocessing
+
+Optional (but sometimes useful):
+
+Werkzeug – comes with Flask, used internally
+
+Jinja2 – Flask template engine (comes with Flask)
+
+Step 1: Create requirements.txt
+
+Create a file named requirements.txt in your project folder and paste this content:
+
+Flask==2.3.3
+pandas==2.1.1
+scikit-learn==1.3.0
+nltk==3.9.1
+Werkzeug==2.3.7
+Jinja2==3.1.2
+
+
+Explanation:
+
+Flask==2.3.3 → the main web framework
+
+pandas==2.1.1 → for CSV handling (spam.csv)
+
+scikit-learn==1.3.0 → for Naive Bayes and CountVectorizer
+
+nltk==3.9.1 → for stopwords preprocessing
+
+Werkzeug and Jinja2 → Flask dependencies (ensure smooth running)
+
+Step 2: Install Dependencies
+
+After cloning your repo or sharing it, to install all dependencies on a new machine, run:
+
+pip install -r requirements.txt
+
+
+This will automatically install all the libraries your project needs.
+
+Step 3 (Optional): Check Installed Versions
+
+You can check versions after installing:
+
+pip show flask pandas scikit-learn nltk
+
+Pro Tip
+
+Don’t include unnecessary libraries like matplotlib if you’re not using them — keeps your project lightweight.
+
+Using exact versions ensures your project works exactly the same for anyone else.
