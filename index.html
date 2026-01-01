@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spam Email Detection</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin-top: 50px; }
+        textarea { width: 500px; height: 150px; font-size: 16px; }
+        input[type=submit] { font-size: 18px; padding: 10px 20px; margin-top: 10px; }
+        h2 { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Spam Email Detection</h1>
+    <form method="POST">
+        <textarea name="email_content" placeholder="Enter your email/message here"></textarea><br>
+        <input type="submit" value="Check Email">
+    </form>
+    {% if result %}
+    <h2>Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
